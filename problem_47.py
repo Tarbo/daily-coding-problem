@@ -17,9 +17,10 @@ def max_profit(stock_list):
             if next_stock - stock > max_profit:
                 stock_to_buy = stock
                 max_profit = next_stock-stock
-            elif next_stock - stock == max_profit:
+            else:
                 continue
-    return stock_to_buy
+    if stock_to_buy > 0:
+        return stock_to_buy
 
 if __name__ == "__main__":
     stocks = [9, 11, 2, 5, 7, 10]
