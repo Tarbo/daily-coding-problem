@@ -19,6 +19,6 @@ class Queue:
     def dequeue(self):
         try:
             return self.queue.pop(0)
-        except Exception as err:  # catch exception due to empty list
+        except IndexError as err:  # catch exception due to empty list
             print(f'>>> {err} has occured <<<')
             return False
