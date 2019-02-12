@@ -13,6 +13,8 @@ from collections import OrderedDict
 
 
 class LRU:
+    "LRU cache implementation using O(1) time complexity"
+
     def __init__(self, size):
         self.size = size
         self.cache = OrderedDict()
