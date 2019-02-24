@@ -59,6 +59,7 @@ def print_matrix(matrix):
                 print(f'>>> {matrix[index].pop(0)}')
 
 
+# test the function
 if __name__ == "__main__":
     matrix = [[1,  2,  3,  4,  5],
               [6,  7,  8,  9,  10],
