@@ -14,6 +14,7 @@ For example, given 1, you should return 19. Given 2, you should return 28.
 def perfect_number(n):
     # get the product of n+1 and 10
     assert n > 1, "n must be greater than one"
+    # gives you the next number with modulus zero when divided by 10
     value = (n + 1) * 10
     return value - n
 
